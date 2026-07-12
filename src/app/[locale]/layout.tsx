@@ -85,28 +85,6 @@ export const viewport: Viewport = {
   maximumScale: 1,
 };
 
-// Premium engagement fonts
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-serif",
-  display: "swap",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-sans",
-  display: "swap",
-});
-
-const tajawal = Tajawal({
-  subsets: ["arabic", "latin"],
-  weight: ["300", "400", "500", "700"],
-  variable: "--font-arabic",
-  display: "swap",
-});
-
 export default async function LocaleLayout({
   children,
   params
