@@ -170,8 +170,8 @@ export default function Venue() {
                   <path d="M9 5V9.5L12 11.5" stroke="#C5A059" strokeWidth="1.2" strokeLinecap="round" />
                 </svg>}
                 label="Time"
-                value="6:00 PM Onwards"
-                valueAr="من الساعة 6 بالليل"
+                value="7.30 PM Onwards"
+                valueAr="من الساعة 7.30 بالليل"
               />
               <div className="h-px bg-gradient-to-r from-transparent via-[#C5A059]/15 to-transparent" />
               <DetailPill
@@ -199,7 +199,7 @@ export default function Venue() {
 
             {/* Google Maps CTA */}
             <motion.a
-              href={EVENT_DETAILS.googleMapsUrl}
+              href={'https://www.google.com/maps/place/31%C2%B002'24.1%22N+31%C2%B020'06.4%22E/@31.0400257,31.3325329,17z/data=!3m1!4b1!4m4!3m3!8m2!3d31.0400257!4d31.3351078?hl=en&entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D'}
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
@@ -266,21 +266,24 @@ export default function Venue() {
               }}
             >
               {/* Parallax-scaled map */}
-              <motion.div
-                className="absolute inset-0"
-                style={{ scale: mapScale, opacity: mapOpacity }}
-              >
-                <iframe
-                  src={`https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13815.5!2d${EVENT_DETAILS.venueCoordinates.lng}!3d${EVENT_DETAILS.venueCoordinates.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1700000000000`}
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0, filter: 'saturate(0.6) contrast(1.1) brightness(0.85)' }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Cove Venue — Mansoura, Egypt"
-                />
-              </motion.div>
+             <motion.div
+  className="absolute inset-0"
+  style={{ scale: mapScale, opacity: mapOpacity }}
+>
+  <iframe
+    src="https://maps.google.com/maps?q=31.0400257,31.3351078&z=17&output=embed"
+    width="100%"
+    height="100%"
+    style={{
+      border: 0,
+      filter: "saturate(0.6) contrast(1.1) brightness(0.85)",
+    }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Engagement Venue"
+  />
+</motion.div>
 
               {/* Dark overlay edges */}
               <div className="absolute inset-0 pointer-events-none rounded-2xl"
