@@ -199,7 +199,7 @@ export default function Venue() {
 
             {/* Google Maps CTA */}
             <motion.a
-              href={'https://www.google.com/maps/place/31%C2%B002'24.1%22N+31%C2%B020'06.4%22E/@31.0400257,31.3325329,17z/data=!3m1!4b1!4m4!3m3!8m2!3d31.0400257!4d31.3351078?hl=en&entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D'}
+              href={"https://www.google.com/maps/place/31%C2%B002'24.1%22N+31%C2%B020'06.4%22E/@31.0400257,31.3325329,17z/data=!3m1!4b1!4m4!3m3!8m2!3d31.0400257!4d31.3351078?hl=en&entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D"}
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
