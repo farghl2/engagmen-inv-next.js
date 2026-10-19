@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { EVENT_DETAILS } from '@/src/constants/event';
 
 interface EnvelopeProps {
   onOpen: () => void;
@@ -185,7 +186,7 @@ export default function Envelope({ onOpen, onAudioUnlock }: EnvelopeProps) {
               <p className="font-arabic text-sm sm:text-base md:text-lg
                             text-[#6B4050]/75 tracking-wider mb-3 sm:mb-4"
                 dir="rtl">
-                ندعوكم لحضور حفل خطوبة
+                ندعوكم لحضور حفل {EVENT_DETAILS.eventTypeArabic}
               </p>
             </RevealLine>
 
@@ -197,7 +198,7 @@ export default function Envelope({ onOpen, onAudioUnlock }: EnvelopeProps) {
                            text-[#2B1018]"
                 style={{ textShadow: '0 2px 20px rgba(197,160,89,0.2)' }}
               >
-                Ahmed
+                {EVENT_DETAILS.groomName}
               </h1>
             </RevealLine>
 
@@ -222,7 +223,7 @@ export default function Envelope({ onOpen, onAudioUnlock }: EnvelopeProps) {
                            text-[#2B1018]"
                 style={{ textShadow: '0 2px 20px rgba(197,160,89,0.2)' }}
               >
-                Nada
+                {EVENT_DETAILS.brideName}
               </h1>
             </RevealLine>
 
@@ -231,7 +232,7 @@ export default function Envelope({ onOpen, onAudioUnlock }: EnvelopeProps) {
               <p className="font-arabic text-[clamp(1.4rem,4.5vw,3rem)]
                             text-[#9B7E3F] mt-2 sm:mt-3 leading-loose"
                 dir="rtl">
-                أحمد & ندى
+                {EVENT_DETAILS.groomNameArabic} & {EVENT_DETAILS.brideNameArabic}
               </p>
             </RevealLine>
 

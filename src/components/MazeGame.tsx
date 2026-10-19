@@ -4,6 +4,7 @@ import { useEffect, useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { Heart, Navigation } from 'lucide-react';
 import { Position, MazeCell } from '@/src/types/invitation';
+import { EVENT_DETAILS } from '@/src/constants/event';
 
 interface MazeGameProps {
   onComplete: () => void;
@@ -25,7 +26,7 @@ const MAZE_LAYOUT = [
 const CELL_SIZE = 40; // pixels
 
 /**
- * Interactive maze game where groom (Ahmed) finds bride (Nada)
+ * Interactive maze game where groom (Mohamed) finds bride (Aya)
  * Supports keyboard arrows and touch/swipe controls
  */
 export default function MazeGame({ onComplete }: MazeGameProps) {
@@ -171,10 +172,10 @@ export default function MazeGame({ onComplete }: MazeGameProps) {
         className="text-center mb-6 z-10"
       >
         <h2 className="font-serif text-2xl md:text-3xl text-[#800020] mb-2">
-          Help Ahmed Find Nada
+          Help {EVENT_DETAILS.groomName} Find {EVENT_DETAILS.brideName}
         </h2>
         <p className="font-arabic text-xl md:text-2xl text-[#C5A059]" dir="rtl">
-          ساعد أحمد ليصل إلى ندى
+          ساعد {EVENT_DETAILS.groomNameArabic} ليصل إلى {EVENT_DETAILS.brideNameArabic}
         </p>
       </motion.div>
 
@@ -234,7 +235,7 @@ export default function MazeGame({ onComplete }: MazeGameProps) {
                   }}
                   whileHover={!isWallCell ? { scale: 1.05 } : {}}
                 >
-                  {/* End position (Nada) */}
+                  {/* End position (Aya) */}
                   {isEnd && !isPlayer && (
                     <motion.div
                       animate={{
@@ -253,7 +254,7 @@ export default function MazeGame({ onComplete }: MazeGameProps) {
                     </motion.div>
                   )}
 
-                  {/* Player (Ahmed) */}
+                  {/* Player (Mohamed) */}
                   {isPlayer && (
                     <motion.div
                       layoutId="player"

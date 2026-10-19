@@ -32,20 +32,21 @@ const tajawal = Tajawal({
 
 /* ─── SEO Metadata ───────────────────────────────────────── */
 export const metadata: Metadata = {
-  title: 'حفل خطوبة أحمد & ندى — ١٦ يوليو ٢٠٢٦',
+  title: 'حفل زفاف محمد & آيه — ٢٤ أكتوبر ٢٠٢٦',
   description:
-    'يشرف عليكم أحمد وندى بدعوتكم لحضور حفل خطوبتهما — الخميس ١٦ يوليو ٢٠٢٦ في كوف، المنصورة على ضفاف النيل.',
+    'يتشرف محمد وآيه بدعوتكم لحضور حفل زفافهما — السبت ٢٤ أكتوبر ٢٠٢٦ في القاعة الملكية، جرجا، سوهاج.',
   keywords: [
-    'حفل خطوبة',
-    'أحمد وندى',
-    'دعوة خطوبة',
-    'engagement party',
-    'Ahmed and Nada',
-    'Cove Mansoura',
-    'المنصورة',
+    'حفل زفاف',
+    'محمد وآيه',
+    'دعوة زفاف',
+    'wedding invitation',
+    'Mohamed and Aya',
+    'القاعة الملكية',
+    'جرجا',
+    'سوهاج',
   ],
-  authors: [{ name: 'Ahmed & Nada' }],
-  creator: 'Ahmed & Nada',
+  authors: [{ name: 'Mohamed & Aya' }],
+  creator: 'Mohamed & Aya',
   robots: {
     index: false,   // private invitation — don't index publicly
     follow: false,
@@ -53,23 +54,23 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'ar_EG',
-    title: 'أحمد & ندى — حفل الخطوبة 💍',
+    title: 'محمد & آيه — حفل الزفاف 💍',
     description:
-      'نتشرف بدعوتكم لحضور حفل خطوبة أحمد وندى — ١٦ يوليو ٢٠٢٦، كوف، المنصورة',
-    siteName: 'حفل خطوبة أحمد & ندى',
+      'نتشرف بدعوتكم لحضور حفل زفاف محمد وآيه — ٢٤ أكتوبر ٢٠٢٦، القاعة الملكية، جرجا، سوهاج',
+    siteName: 'حفل زفاف محمد & آيه',
     images: [
       {
         url: '/og-image.jpg',   // place a 1200×630 image at public/og-image.jpg
         width: 1200,
         height: 630,
-        alt: 'حفل خطوبة أحمد & ندى',
+        alt: 'حفل زفاف محمد & آيه',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'أحمد & ندى — حفل الخطوبة 💍',
-    description: 'نتشرف بدعوتكم — ١٦ يوليو ٢٠٢٦، كوف، المنصورة',
+    title: 'محمد & آيه — حفل الزفاف 💍',
+    description: 'نتشرف بدعوتكم — ٢٤ أكتوبر ٢٠٢٦، القاعة الملكية، جرجا، سوهاج',
     images: ['/og-image.jpg'],
   },
   icons: {

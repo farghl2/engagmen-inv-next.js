@@ -234,12 +234,13 @@ npm start
 
 ## 📝 Event Details
 
-- **Couple**: Ahmed & Nada (أحمد & ندى)
-- **Event**: Engagement Party (خطوبة)
-- **Date**: Thursday, July 16, 2026 at 6:00 PM
-- **Venue**: Cove, Mansoura, Egypt
-- **Location**: Overlooking the Nile River
-- **Coordinates**: 31.0409°N, 31.3785°E
+- **Couple**: Mohamed & Aya (محمد & آيه)
+- **Event**: Wedding Celebration (حفل زفاف)
+- **Date**: Saturday, October 24, 2026 at 9:00 PM
+- **Venue**: The Royal Hall (القاعة الملكية), Girga, Sohag, Egypt
+- **Location**: جرجا , سوهاج
+- **Google Maps**: https://maps.app.goo.gl/jsmBkfSrqB3dGZHS9
+- **Coordinates**: 26.3481769°N, 31.8891811°E
 
 ## 🎨 Design Philosophy
 

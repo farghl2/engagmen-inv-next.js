@@ -1,23 +1,23 @@
 import { EventDetails } from '@/src/types/invitation';
 
 /**
- * Event details for Ahmed & Nada's engagement party
+ * Event details for Mohamed & Aya's wedding party
  */
 export const EVENT_DETAILS: EventDetails = {
-  groomName: 'Ahmed',
-  groomNameArabic: 'أحمد',
-  brideName: 'Nada',
-  brideNameArabic: 'ندى',
-  eventType: 'Engagement Party',
-  eventTypeArabic: 'خطوبة',
-  eventDate: new Date('2026-07-16T18:00:00'),
-  venueName: 'Cove',
-  venueLocation: 'Mansoura, Egypt - Overlooking the Nile',
+  groomName: 'Mohamed',
+  groomNameArabic: 'محمد',
+  brideName: 'Aya',
+  brideNameArabic: 'آيه',
+  eventType: 'Wedding Celebration',
+  eventTypeArabic: 'زفاف',
+  eventDate: new Date('2026-10-24T21:00:00'),
+  venueName: 'The Royal Hall',
+  venueLocation: 'Girga, Sohag, Egypt',
   venueCoordinates: {
-    lat: 31.0409, // Mansoura coordinates
-    lng: 31.3785,
+    lat: 26.3481769,
+    lng: 31.8891811,
   },
-  googleMapsUrl: 'https://maps.google.com/?q=31.0409,31.3785',
+  googleMapsUrl: 'https://maps.app.goo.gl/jsmBkfSrqB3dGZHS9',
 };
 
 /**

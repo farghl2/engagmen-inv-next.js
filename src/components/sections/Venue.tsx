@@ -147,7 +147,7 @@ export default function Venue() {
                   {EVENT_DETAILS.venueLocation}
                 </p>
                 <p className="text-[#C5A059]/70 font-arabic text-sm mt-2" dir="rtl">
-                  المنصورة، مصر — على ضفاف النيل مباشرةً 🌊
+                  جرجا، سوهاج — القاعة الملكية 🏛️
                 </p>
               </div>
             </motion.div>
@@ -170,8 +170,8 @@ export default function Venue() {
                   <path d="M9 5V9.5L12 11.5" stroke="#C5A059" strokeWidth="1.2" strokeLinecap="round" />
                 </svg>}
                 label="Time"
-                value="7.30 PM Onwards"
-                valueAr="من الساعة 7.30 بالليل"
+                value="9:00 PM Onwards"
+                valueAr="من الساعة 9.00 مساءً"
               />
               <div className="h-px bg-gradient-to-r from-transparent via-[#C5A059]/15 to-transparent" />
               <DetailPill
@@ -181,8 +181,8 @@ export default function Venue() {
                   <circle cx="9" cy="7" r="2" stroke="#C5A059" strokeWidth="1.2" />
                 </svg>}
                 label="Location"
-                value="Cove, Mansoura"
-                valueAr="كوف، المنصورة"
+                value="The Royal Hall, Girga"
+                valueAr="القاعة الملكية، جرجا"
               />
               <div className="h-px bg-gradient-to-r from-transparent via-[#C5A059]/15 to-transparent" />
               <DetailPill
@@ -192,14 +192,14 @@ export default function Venue() {
                   <path d="M5 1V4M13 1V4" stroke="#C5A059" strokeWidth="1.2" strokeLinecap="round" />
                 </svg>}
                 label="Date"
-                value="Thursday, July 16 · 2026"
-                valueAr="الخميس ١٦ يوليو ٢٠٢٦"
+                value="Saturday, October 24 · 2026"
+                valueAr="السبت ٢٤ أكتوبر ٢٠٢٦"
               />
             </motion.div>
 
             {/* Google Maps CTA */}
             <motion.a
-              href={"https://www.google.com/maps/place/31%C2%B002'24.1%22N+31%C2%B020'06.4%22E/@31.0400257,31.3325329,17z/data=!3m1!4b1!4m4!3m3!8m2!3d31.0400257!4d31.3351078?hl=en&entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D"}
+              href={EVENT_DETAILS.googleMapsUrl}
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
@@ -271,7 +271,7 @@ export default function Venue() {
   style={{ scale: mapScale, opacity: mapOpacity }}
 >
   <iframe
-    src="https://maps.google.com/maps?q=31.0400257,31.3351078&z=17&output=embed"
+    src={`https://maps.google.com/maps?q=${EVENT_DETAILS.venueCoordinates.lat},${EVENT_DETAILS.venueCoordinates.lng}&z=17&output=embed`}
     width="100%"
     height="100%"
     style={{
@@ -281,7 +281,7 @@ export default function Venue() {
     allowFullScreen
     loading="lazy"
     referrerPolicy="no-referrer-when-downgrade"
-    title="Engagement Venue"
+    title="Wedding Venue"
   />
 </motion.div>
 
@@ -311,7 +311,7 @@ export default function Venue() {
               </motion.div>
             </div>
 
-            {/* Nile quote card */}
+            {/* Venue quote card */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -324,12 +324,12 @@ export default function Venue() {
                 boxShadow: '0 12px 40px rgba(0,0,0,0.5)',
               }}
             >
-              <p className="text-[#C5A059] text-2xl mb-1">🌊</p>
+              <p className="text-[#C5A059] text-2xl mb-1">🏛️</p>
               <p className="text-[#FDFBF7] font-sans text-sm font-medium leading-snug">
-                Overlooking the Nile
+                The Royal Hall
               </p>
               <p className="text-[#E8C5C8]/60 font-arabic text-xs mt-1" dir="rtl">
-                على ضفاف النيل
+                القاعة الملكية — جرجا
               </p>
             </motion.div>
           </motion.div>

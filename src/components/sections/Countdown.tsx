@@ -202,7 +202,7 @@ export default function Countdown() {
             className="font-arabic text-xl text-[#C5A059]/80"
             dir="rtl"
           >
-            الدنيا هتتغير ١٦ يوليو — كون جزء منها 🌹
+            الدنيا هتتغير ٢٤ أكتوبر — كونوا جزء منها 🌹
           </motion.p>
 
           <motion.p

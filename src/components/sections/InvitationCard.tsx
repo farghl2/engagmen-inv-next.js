@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { EVENT_DETAILS } from '@/src/constants/event';
 
 /* ─── Watercolor roses SVG ───────────────────────────────── */
 function WatercolorRoses() {
@@ -118,10 +119,10 @@ export default function InvitationCard() {
               <WatercolorRoses />
             </motion.div>
 
-            {/* ENGAGEMENT CEREMONY */}
+            {/* WEDDING CEREMONY */}
             <motion.div variants={item} className="text-center mt-1">
               <p className="tracking-[0.35em] text-[9px] text-[#800020]/55 uppercase font-sans">
-                Engagement Ceremony
+                Wedding Ceremony
               </p>
               <div className="mt-2 h-px w-20 mx-auto bg-gradient-to-r from-transparent via-[#C5A059]/50 to-transparent"/>
             </motion.div>
@@ -136,10 +137,10 @@ export default function InvitationCard() {
               </p>
             </motion.div>
 
-            {/* حفل الخطوبة */}
+            {/* حفل الزفاف */}
             <motion.div variants={item} className="text-center mt-3">
               <h2 className="font-arabic font-bold text-4xl text-[#800020] leading-tight" dir="rtl">
-                حفل الخطوبة
+                حفل الزفاف
               </h2>
               <div className="mt-2 h-0.5 w-14 mx-auto bg-gradient-to-r from-transparent via-[#C5A059] to-transparent"/>
             </motion.div>
@@ -147,7 +148,7 @@ export default function InvitationCard() {
             {/* Names */}
             <motion.div variants={item} className="text-center mt-5">
               <p className="font-arabic font-bold text-[3rem] text-[#800020] leading-none" dir="rtl">
-                أحمد
+                {EVENT_DETAILS.groomNameArabic}
               </p>
               <motion.div
                 animate={{ scale: [1, 1.18, 1] }}
@@ -160,7 +161,7 @@ export default function InvitationCard() {
                 </svg>
               </motion.div>
               <p className="font-arabic font-bold text-[3rem] text-[#800020] leading-none" dir="rtl">
-                ندى
+                {EVENT_DETAILS.brideNameArabic}
               </p>
             </motion.div>
 
@@ -175,20 +176,20 @@ export default function InvitationCard() {
             <motion.div variants={item} className="mt-5 w-full space-y-2">
               <GoldDivider label="Date" />
               <p className="text-center font-arabic text-lg font-bold text-[#800020]" dir="rtl">
-                الخميس ١٦ يوليو ٢٠٢٦
+                السبت ٢٤ أكتوبر ٢٠٢٦
               </p>
 
               <GoldDivider label="Time" />
               <p className="text-center font-arabic text-xl font-bold text-[#800020]" dir="rtl">
-                ٦ مساءً
+                ٩ مساءً
               </p>
 
               <GoldDivider label="Location" />
               <p className="text-center font-arabic text-lg font-bold text-[#800020]" dir="rtl">
-                كوف — المنصورة
+                القاعة الملكية — جرجا
               </p>
               <p className="text-center font-arabic text-xs text-[#800020]/45 mt-0.5" dir="rtl">
-                على ضفاف النيل 🌊
+                جرجا ، سوهاج 🏛️
               </p>
             </motion.div>
 

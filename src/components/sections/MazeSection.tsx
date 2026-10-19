@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Position } from '@/src/types/invitation';
+import { EVENT_DETAILS } from '@/src/constants/event';
 
 /* ─── Maze layout ─────────────────────────────────────────── */
 const MAZE: (0 | 1 | 'S' | 'E')[][] = [
@@ -273,10 +274,10 @@ export default function MazeSection() {
             Fun Zone
           </p>
           <h2 className="font-serif text-[clamp(1.6rem,4vw,2.8rem)] text-[#FDFBF7] mb-2">
-            Help Ahmed Find Nada
+            Help {EVENT_DETAILS.groomName} Find {EVENT_DETAILS.brideName}
           </h2>
           <p className="font-arabic text-sm text-[#E8C5C8]/55" dir="rtl">
-            ساعد أحمد يوصل لندى قبل الحفلة 😄
+            ساعد {EVENT_DETAILS.groomNameArabic} يوصل ل{EVENT_DETAILS.brideNameArabic} قبل الحفلة 😄
           </p>
         </motion.div>
 
@@ -305,7 +306,7 @@ export default function MazeSection() {
               </motion.div>
               <h3 className="font-serif text-xl text-[#FDFBF7] mb-2">Mini Maze Challenge</h3>
               <p className="text-[#E8C5C8]/45 font-arabic text-sm mb-6" dir="rtl">
-                لو حاسس بالمغامرة — جرّب توصّل أحمد لندى 🌹
+                لو حاسس بالمغامرة — جرّب توصّل {EVENT_DETAILS.groomNameArabic} ل{EVENT_DETAILS.brideNameArabic} 🌹
               </p>
               <motion.button onClick={() => setUnlocked(true)}
                 whileHover={{ scale:1.04 }} whileTap={{ scale:0.95 }}
@@ -340,13 +341,13 @@ export default function MazeSection() {
                       <path d="M5 1C5 1 1 3.5 1 6C1 8.5 2.8 10.5 5 10.5C7.2 10.5 9 8.5 9 6C9 3.5 5 1 5 1Z"/>
                     </svg>
                   </div>
-                  <span className="text-[#C5A059]/60 text-xs font-arabic">أحمد</span>
+                  <span className="text-[#C5A059]/60 text-xs font-arabic">{EVENT_DETAILS.groomNameArabic}</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <svg width="12" height="15" viewBox="0 0 14 17" fill="#E8C5C8" opacity="0.9">
                     <path d="M7 1C7 1 1 5 1 9C1 13 3.7 16 7 16C10.3 16 13 13 13 9C13 5 7 1 7 1Z"/>
                   </svg>
-                  <span className="text-[#E8C5C8]/60 text-xs font-arabic">ندى</span>
+                  <span className="text-[#E8C5C8]/60 text-xs font-arabic">{EVENT_DETAILS.brideNameArabic}</span>
                 </div>
               </div>
 
@@ -390,7 +391,7 @@ export default function MazeSection() {
               <motion.p initial={{ y:14, opacity:0 }} animate={{ y:0, opacity:1 }}
                 transition={{ delay:0.45 }}
                 className="text-[#E8C5C8]/55 font-arabic text-sm mb-6" dir="rtl">
-                زي ما أحمد وصل لندى في المتاه — كده هيوصلوا لبعض في الحياة 💛
+                زي ما {EVENT_DETAILS.groomNameArabic} وصل ل{EVENT_DETAILS.brideNameArabic} في المتاهة — كده هيوصلوا لبعض في الحياة 💛
               </motion.p>
               <motion.button initial={{ opacity:0 }} animate={{ opacity:1 }}
                 transition={{ delay:0.6 }}

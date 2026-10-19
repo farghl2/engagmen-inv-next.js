@@ -12,18 +12,18 @@ export async function generateMetadata({
 
   return {
     title: isArabic
-      ? 'حفل خطوبة أحمد & ندى — ١٦ يوليو ٢٠٢٦'
-      : 'Ahmed & Nada — Engagement Party · July 16, 2026',
+      ? 'حفل زفاف محمد & آيه — ٢٤ أكتوبر ٢٠٢٦'
+      : 'Mohamed & Aya — Wedding Celebration · October 24, 2026',
     description: isArabic
-      ? 'نتشرف بدعوتكم لحضور حفل خطوبة أحمد وندى — الخميس ١٦ يوليو ٢٠٢٦، كوف، المنصورة على ضفاف النيل.'
-      : 'You are cordially invited to celebrate the engagement of Ahmed & Nada — Thursday, July 16 2026, Cove, Mansoura, Egypt.',
+      ? 'نتشرف بدعوتكم لحضور حفل زفاف محمد وآيه — السبت ٢٤ أكتوبر ٢٠٢٦، القاعة الملكية، جرجا، سوهاج.'
+      : 'You are cordially invited to celebrate the wedding of Mohamed & Aya — Saturday, October 24 2026, The Royal Hall, Girga, Sohag, Egypt.',
     openGraph: {
       title: isArabic
-        ? 'أحمد & ندى — حفل الخطوبة 💍'
-        : 'Ahmed & Nada — Engagement Party 💍',
+        ? 'محمد & آيه — حفل الزفاف 💍'
+        : 'Mohamed & Aya — Wedding Celebration 💍',
       description: isArabic
-        ? 'نتشرف بدعوتكم — ١٦ يوليو ٢٠٢٦، كوف، المنصورة'
-        : 'Join us to celebrate — July 16, 2026 · Cove, Mansoura',
+        ? 'نتشرف بدعوتكم — ٢٤ أكتوبر ٢٠٢٦، القاعة الملكية، جرجا'
+        : 'Join us to celebrate — October 24, 2026 · The Royal Hall, Girga',
     },
   };
 }
@@ -33,32 +33,32 @@ function JsonLd() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Event',
-    name: 'حفل خطوبة أحمد & ندى',
-    alternateName: 'Ahmed & Nada Engagement Party',
+    name: 'حفل زفاف محمد & آيه',
+    alternateName: 'Mohamed & Aya Wedding Celebration',
     description:
-      'حفل خطوبة أحمد وندى — الخميس ١٦ يوليو ٢٠٢٦ في كوف، المنصورة على ضفاف النيل.',
-    startDate: '2026-07-16T18:00:00+02:00',
-    endDate: '2026-07-16T23:59:00+02:00',
+      'حفل زفاف محمد وآيه — السبت ٢٤ أكتوبر ٢٠٢٦ في القاعة الملكية، جرجا، سوهاج.',
+    startDate: '2026-10-24T21:00:00+02:00',
+    endDate: '2026-10-25T02:00:00+02:00',
     eventStatus: 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     location: {
       '@type': 'Place',
-      name: 'Cove — كوف',
+      name: 'The Royal Hall — القاعة الملكية',
       address: {
         '@type': 'PostalAddress',
-        addressLocality: 'Mansoura',
-        addressRegion: 'Dakahlia',
+        addressLocality: 'Girga',
+        addressRegion: 'Sohag',
         addressCountry: 'EG',
       },
       geo: {
         '@type': 'GeoCoordinates',
-        latitude: 31.0409,
-        longitude: 31.3785,
+        latitude: 26.3481769,
+        longitude: 31.8891811,
       },
     },
     organizer: [
-      { '@type': 'Person', name: 'أحمد', alternateName: 'Ahmed' },
-      { '@type': 'Person', name: 'ندى',  alternateName: 'Nada'  },
+      { '@type': 'Person', name: 'محمد', alternateName: 'Mohamed' },
+      { '@type': 'Person', name: 'آيه',  alternateName: 'Aya'  },
     ],
     image: '/og-image.jpg',
     inLanguage: ['ar', 'en'],

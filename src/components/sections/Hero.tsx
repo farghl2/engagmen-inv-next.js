@@ -265,7 +265,7 @@ export default function Hero() {
           </div>
 
           <p className="font-arabic text-lg md:text-xl text-[#E8C5C8]/80 leading-loose" dir="rtl">
-            ندعوكم لحضور حفل خطوبة أحمد وندى
+            ندعوكم لحضور حفل {EVENT_DETAILS.eventTypeArabic} {EVENT_DETAILS.groomNameArabic} و{EVENT_DETAILS.brideNameArabic}
           </p>
           <p className="font-arabic text-sm md:text-base text-[#E8C5C8]/50 leading-relaxed" dir="rtl">
             يشرفنا وجودكم معنا في هذه الليلة الجميلة 🌹

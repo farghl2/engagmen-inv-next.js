@@ -8,6 +8,7 @@ import Hero from '@/src/components/sections/Hero';
 import Countdown from '@/src/components/sections/Countdown';
 import Venue from '@/src/components/sections/Venue';
 import MazeSection from '@/src/components/sections/MazeSection';
+import { EVENT_DETAILS } from '@/src/constants/event';
 
 type FlowState = 'envelope' | 'landing';
 
@@ -127,10 +128,10 @@ function Footer() {
         </p>
 
         <p className="font-serif text-[clamp(1.5rem,4vw,2.5rem)] text-[#FDFBF7]">
-          Ahmed & Nada
+          {EVENT_DETAILS.groomName} & {EVENT_DETAILS.brideName}
         </p>
         <p className="font-arabic text-xl text-[#C5A059]/80" dir="rtl">
-          أحمد & ندى 💛
+          {EVENT_DETAILS.groomNameArabic} & {EVENT_DETAILS.brideNameArabic} 💛
         </p>
 
         <div className="flex items-center justify-center gap-4 pt-4">
@@ -140,7 +141,7 @@ function Footer() {
         </div>
 
         <p className="text-[#FDFBF7]/20 font-sans text-xs mt-4">
-          16 July 2026 &nbsp;·&nbsp; Cove, Mansoura, Egypt 🌊
+          24 October 2026 &nbsp;·&nbsp; {EVENT_DETAILS.venueName}, {EVENT_DETAILS.venueLocation} 🏛️
         </p>
       </motion.div>
     </footer>
